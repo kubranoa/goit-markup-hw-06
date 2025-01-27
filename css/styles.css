@@ -613,6 +613,7 @@ span {
 .checkbox:checked + label .span-checkbox {
   border: none;
   fill: #f4f4fd;
+  background-color: #404bbf;
 }
 .pp-link {
   color: #4d5ae5;
