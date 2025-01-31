@@ -18,9 +18,8 @@ img {
 }
 .header-div {
   display: flex;
-}
-.container {
-  width: 1158px;
+
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -47,6 +46,7 @@ img {
 .nav-ul {
   display: flex;
   gap: 40px;
+  overflow: hidden;
 }
 .nav-ul li {
   list-style-type: none;
@@ -89,6 +89,7 @@ img {
   font-weight: 400;
   font-style: normal;
   margin-left: 250px;
+  overflow: hidden;
 }
 .address-ul {
   color: #434455;
@@ -125,7 +126,7 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/peopleoffice.jpg);
-  max-width: 1440px;
+  max-width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -632,4 +633,90 @@ span {
   background-color: #4d5ae5;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ---------------- */
+/* ----------------------------------------------------------- */
+/* -------------------------------------- */
+
+@media screen and (max-width: 320px) {
+  .header .logo-bir {
+    display: block;
+  }
+  header .address {
+    display: none;
+  }
+  header .nav-ul {
+    display: none;
+  }
+  .section-bir {
+    background-color: #2e2f42;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/peopleoffice.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 480px;
+  }
+  h1 .head-title {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: center;
+  }
+  .section-bir .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .section-iki .sectioniki-ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .section-uc .team-list {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .section-uc .team-info .team-infoiki .teamsocial {
+    flex: 1 1 50%;
+  }
+  .op-block .op-list {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .footercontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+    max-width: 50%;
+  }
+  .section-bir {
+    max-width: 100%;
+  }
+  .op-block .op-list .op-items-info {
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 33%;
+  }
+  .footercontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
