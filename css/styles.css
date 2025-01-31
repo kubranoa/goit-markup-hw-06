@@ -639,84 +639,52 @@ span {
 /* ----------------------------------------------------------- */
 /* -------------------------------------- */
 
-@media screen and (max-width: 320px) {
-  .header .logo-bir {
-    display: block;
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+  address {
+    padding-left: 121px;
+    padding-top: 0;
   }
-  header .address {
+  address ul {
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .section-iki ul {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .section-iki .ikincisec-list {
+    flex: 1 1 45%;
+  }
+  .section-iki .ikincisec-list .ikon {
     display: none;
   }
-  header .nav-ul {
-    display: none;
-  }
-  .section-bir {
-    background-color: #2e2f42;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/peopleoffice.jpg);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 480px;
-  }
-  h1 .head-title {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    position: center;
-  }
-  .section-bir .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  .section-iki .sectioniki-ul {
-    flex-direction: column;
+  .section-uc ul {
     flex-wrap: wrap;
   }
-  .section-uc .team-list {
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .section-uc .team-info .team-infoiki .teamsocial {
-    flex: 1 1 50%;
+  .section-uc .team-list .team-member {
+    width: 45%;
   }
   .op-block .op-list {
-    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footerdiv {
+    flex-wrap: wrap;
+  }
+  footer .footercontainer {
+    margin-left: 108px;
+  }
+  footer div.footerdiv {
+    margin-right: 24px;
+  }
+  .section-iki h3 {
+    font-weight: 700;
+    font-size: 36px;
+  }
+  .section-iki p {
     width: 100%;
-  }
-  .footercontainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  header {
-    display: flex;
-    justify-content: space-around;
-    max-width: 50%;
-  }
-  .section-bir {
-    max-width: 100%;
-  }
-  .op-block .op-list .op-items-info {
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex: 1 1 33%;
-  }
-  .footercontainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
   }
 }
